@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina em GO</title>
+
+    <style>
+        h2 {
+            color: green;
+            font-size: 40px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h2>Pagina Inicial</h2>
+    <marquee><h4>Olá, seja bem-vindo {{.Nome}}</h4></marquee>
+    <button id="btn">Clique Aqui</button>
+        <script>
+        const botao = document.getElementById("btn")
+        botao.onclick = function(){
+            alert("Cliquei");
+        }
+    </script>
+</body>
+</html>
